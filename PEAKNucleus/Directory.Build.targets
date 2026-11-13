@@ -1,0 +1,38 @@
+<Project>
+	<Sdk Name="ThunderPipe.Sdk" Version="0.1.3" />
+
+	<PropertyGroup>
+		<!-- Set additional NuGet sources -->
+		<RestoreAdditionalProjectSources>
+			https://nuget.bepinex.dev/v3/index.json;
+			https://nuget.windows10ce.com/nuget/v3/index.json
+		</RestoreAdditionalProjectSources>
+	</PropertyGroup>
+
+	<!-- Build dependencies -->
+	<ItemGroup>
+		<!--
+      If you upload your project on NuGet, PrivateAssets="all"
+      prevents consumers of your package from referencing these
+      packages transitively. This is desired because these packages
+      are not required by anyone using your package as they are
+      code analyzers, source generators, or other build-only packages.
+    -->
+		<PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.3" PrivateAssets="all" />
+		<PackageReference Include="Hamunii.BepInEx.AutoPlugin" Version="2.1.*" PrivateAssets="all" />
+		<PackageReference Include="PolySharp" Version="1.15.0" PrivateAssets="all" />
+	</ItemGroup>
+
+	<!-- Modding dependencies -->
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Core" Version="5.4.21" />
+		<!-- In reality BepInEx 5.4.21 ships HarmonyX 2.9 but BepInEx.Core gives us 2.7 -->
+		<PackageReference Include="HarmonyX" Version="2.9.0" />
+	</ItemGroup>
+
+	<!-- NuGet fallback stripped game references -->
+	<ItemGroup Condition="!Exists('$(ManagedDir)')">
+		<PackageReference Include="UnityEngine.Modules" Version="6000.0.36" PrivateAssets="all" />
+	</ItemGroup>
+</Project>

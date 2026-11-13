@@ -1,0 +1,290 @@
+[
+  {
+    "default": "0",
+    "global": "0",
+    "name": "MealsCooked",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "MoraleBoosts",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "PitonsPlaced",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "PoisonHealed",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "HeightClimbed",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "LoadedCosmeticsPreviously",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Skin",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Eyes",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Mouth",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Accessory",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Outfit",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Hat",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "MaxAscent",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "TimesPeaked",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_1",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_2",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_3",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_4",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_5",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_6",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_7",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "ReadGuidebookPage_0",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "TotalPagesRead",
+    "type": "int"
+  },
+  {
+    "default": "-1",
+    "global": "0",
+    "name": "Cosmetic_Sash",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Forestry",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_TreadLightly",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_WebSecurity",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_UndeadEncounter",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_AdvancedMycology",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_DisasterResponse",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "DamageBlockedByMilk",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_CompetitiveEating",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_AppliedEsoterica",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Mycoacrobatics",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Cryptogastronomy",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Wanderer",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_BellRinger",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_WellRested",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Jester",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_HangGliding",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_MedievalHistory",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_LastResort",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Exorcist",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_Archery",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "GotBadge_RuleZero",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "SeenGuidebookPages",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "Cosmetic_Medal",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "RanOneTimeAscentCheck",
+    "type": "int"
+  }
+]

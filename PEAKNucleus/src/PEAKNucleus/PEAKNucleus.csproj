@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<AssemblyName>com.github.stenlan.PEAKNucleus</AssemblyName>
+		<AssemblyTitle>PEAKNucleus</AssemblyTitle>
+		<Version>0.0.1</Version>
+		<SteamDir Condition="'$(SteamDir)'==''">E:\Program Files (x86)\Steam</SteamDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="com.rlabrecque.steamworks.net">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Photon">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\Photon.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonRealtime">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\PhotonRealtime.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\PhotonUnityNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="SteamCommon">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\SteamCommon.dll</HintPath>
+		</Reference>
+		<Reference Include="SteamManagerAssembly">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\SteamManagerAssembly.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Networking">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\Unity.Services.Core.Networking.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Multiplayer">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\Unity.Services.Multiplayer.dll</HintPath>
+		</Reference>
+		<Reference Include="Zorro.Settings.Runtime">
+			<HintPath>$(SteamDir)\steamapps\common\PEAK\PEAK_Data\Managed\Zorro.Settings.Runtime.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Copy SourceFiles="$(OutputPath)\com.github.stenlan.PEAKNucleus.dll" DestinationFolder="$(MSBuildThisFileDirectory)\..\..\..\handler\Peak\BepInEx\plugins" />
+	</Target>
+
+</Project>
