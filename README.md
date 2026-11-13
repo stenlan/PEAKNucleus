@@ -1,4 +1,4 @@
-Updated version of [Talos91's PEAK handler](https://hub.splitscreen.me/handler/rLSxwziuvTcuF3GTp) which supports PEAK's new crossplay/Photon Engine multiplayer update. Uses [LuxonServer](https://github.com/niansa/LuxonServer) to locally emulate a Photon load balancing server and redirects PEAK's game assemblies to use it. Does not require one to create a Photon account.
+This Nucleus Co-Op handler is an updated version of [Talos91's PEAK handler](https://hub.splitscreen.me/handler/rLSxwziuvTcuF3GTp) which supports PEAK's new crossplay/Photon Engine multiplayer update. Uses [LuxonServer](https://github.com/niansa/LuxonServer) to locally emulate a Photon load balancing server and redirects PEAK's game assemblies to use it. Does not require one to create a Photon account.
 
 # Credits
 * [Talos91's PEAK handler](https://hub.splitscreen.me/handler/rLSxwziuvTcuF3GTp)
